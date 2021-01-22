@@ -18,7 +18,7 @@ after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # take those images and push them to docker hub
   - docker push armughanahmed/multi-client
-  #for sake of travis push
+  #for sake of travis push.
   - docker push armughanahmed/multi-nginx
   - docker push armughanahmed/multi-server
   - docker push armughanahmed/multi-worker
